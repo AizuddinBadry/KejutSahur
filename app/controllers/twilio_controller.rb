@@ -3,15 +3,15 @@ require 'twilio-ruby'
 class TwilioController < ApplicationController
   # Before we allow the incoming request to connect, verify
   # that it is a Twilio request
-  before_filter :authenticate_twilio_request, :only => [
+  before_action :authenticate_twilio_request, :only => [
     :connect
   ]
 
   # Define our Twilio credentials as instance variables for later use
-  @@twilio_sid = ENV['TWILIO_ACCOUNT_SID']
-  @@twilio_token = ENV['TWILIO_AUTH_TOKEN']
-  @@twilio_number = ENV['TWILIO_NUMBER']
-  @@api_host = ENV['API_HOST']
+  @@twilio_sid = ENV['AC2bef6dce7335263909334cb85ad12c9f']
+  @@twilio_token = ENV['64152811c5b9ed0876700ce4a220c9d3']
+  @@twilio_number = ENV['+14806463928']
+  @@api_host = ENV['https://demo.twilio.com/welcome/voice/ ']
 
   # Render home page
   def index
