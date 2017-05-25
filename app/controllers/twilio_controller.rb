@@ -11,7 +11,7 @@ class TwilioController < ApplicationController
   @@twilio_sid = ENV['AC2bef6dce7335263909334cb85ad12c9f']
   @@twilio_token = ENV['64152811c5b9ed0876700ce4a220c9d3']
   @@twilio_number = ENV['+14806463928']
-  @@api_host = ENV['https://demo.twilio.com/welcome/voice/ ']
+  @@api_host = ENV['https://bafe-sahur.herokuapp.com']
 
   # Render home page
   def index
