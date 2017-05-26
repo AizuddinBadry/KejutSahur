@@ -8,8 +8,8 @@ class TwilioController < ApplicationController
   ]
 
   # Define our Twilio credentials as instance variables for later use
-  @@twilio_sid = ENV['AC2bef6dce7335263909334cb85ad12c9f']
-  @@twilio_token = ENV['64152811c5b9ed0876700ce4a220c9d3']
+  @@twilio_sid = ENV['ACe9f7c8e82c2bb9b2d946d9714651f3d3']
+  @@twilio_token = ENV['1f52df9d6e239fc7fc0562fa238eec08']
   @@twilio_number = ENV['+14806463928']
   @@api_host = ENV['https://bafe-sahur.herokuapp.com']
 
