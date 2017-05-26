@@ -22,10 +22,6 @@ class TwilioController < ApplicationController
   def call
     contact = Contact.new
     contact.user_phone  = params[:userPhone]
-
-    # Validate contact
-    if contact.valid?
-
       @client = Twilio::REST::Client.new @@twilio_sid, @@twilio_token
       # Connect an outbound call to the number submitted
       @call = @client.calls.create(
@@ -36,15 +32,6 @@ class TwilioController < ApplicationController
 
       # Let's respond to the ajax call with some positive reinforcement
       @msg = { :message => 'Phone call incoming!', :status => 'ok' }
-
-    else
-
-      # Oops there was an error, lets return the validation errors
-      @msg = { :message => contact.errors.full_messages, :status => 'ok' }
-    end
-    respond_to do |format|
-      format.json { render :json => @msg }
-    end
   end
 
   # This URL contains instructions for the call that is connected with a lead
