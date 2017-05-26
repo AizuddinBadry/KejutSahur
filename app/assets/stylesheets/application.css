@@ -15,3 +15,412 @@
  *= require intl-phone/css/intlTelInput.css
  */
 
+
+body
+{
+  background-color: #00244D;
+  max-width: 1300px;
+  margin: auto;
+  font-family:"Gotham Rounded", sans-serif;
+}
+
+@media screen and (min-width: 64em) {
+
+  .btn-sahur
+{
+  border-radius: 50px;
+  width: 320px;
+  height: 44px;
+  background-color: #82BACE;
+  padding-top: 1em;
+  font-weight: 600;
+}
+
+.btn-sahur:hover
+{
+  background-color: #91C8EC;
+}
+
+.content
+{
+  margin: 80px 100px; 
+  height: 600px;
+}
+}
+
+@media screen and (max-width: 39.9375em) 
+{
+  .content
+{
+  margin: 50px; 
+}
+
+.work
+{
+  display: block;
+  background: #011C3A;
+  padding: 50px;
+  padding-top: 66px;
+}
+
+.work h2
+{
+  font-size: 25px !important;
+  margin-bottom: 2em;
+}
+
+.footer
+{
+  background: #F0F0F0;
+  color: #00264A;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer p
+{
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.logoBafe
+{
+  width: 70px;
+  margin-top: 1em;
+}
+}
+
+
+@media screen and (min-width: 64em) {
+
+  .footer
+{
+
+  content: "";
+  display: block;
+  background: #F0F0F0;
+  position: absolute;
+  color: #00264A;
+  top: 110em;
+  bottom: 0;
+  width: 100%;
+  height: 8em;
+  right: 0;
+  z-index: -999;
+  padding-top: 2em;
+}
+
+.footer p
+{
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+  float: left !important;
+}
+
+.logoBafe
+{
+  width: 100px;
+  bottom: 2em;
+  float: right !important;
+}
+
+.work
+{
+  content: "";
+  display: block;
+  background: #011C3A;
+  position: absolute;
+  top: 49.5em;
+  bottom: 0;
+  width: 100%;
+  height: 32em;
+  right: 0;
+  z-index: -999;
+  padding-top: 120px;
+}
+
+
+.cara, .cara2
+{
+  color: #ffffff;
+  margin-top: 4em;
+}
+
+.cara img
+{
+  margin-right: 2em;
+  width: 120px;
+  margin-left: 2em;
+  float: left !important;
+}
+
+.cara2 img
+{
+  margin-right: 2em;
+  width: 120px;
+  float: left !important;
+}
+
+.cara p 
+{
+  font-size: 18px;
+  padding-left: 10px;
+  margin-top: 1em;
+  padding-right: 4em;
+  font-weight: 500;
+}
+
+.cara2 p 
+{
+  font-size: 18px;
+  padding-left: 10px;
+  margin-top: 0.3em;
+  padding-right: 2em;
+  font-weight: 500;
+}
+.term
+{
+  content: "";
+  display: block;
+  background: #fff;
+  position: absolute;
+  color: #00264A;
+  top: 80em;
+  bottom: 0;
+  width: 100%;
+  height: 34em;
+  right: 0;
+  z-index: -999;
+  padding-top: 120px;
+  font-family:"Gotham Rounded", sans-serif;
+}
+
+.term h2
+{
+  font-size: 40px;
+  font-weight: 500;
+  font-family:"Gotham Rounded", sans-serif;
+}
+.termaSyarat
+{
+  margin-top: 2em;
+  font-weight: 300;
+  font-size: 18px;
+  font-family:"Gotham Rounded", sans-serif;
+  margin-bottom: 0px;
+  padding-left: 3em;
+}
+
+.termaSyarat p 
+{
+  padding-left: 1em;
+}
+
+.termaSyarat {
+    list-style-image: url('/assets/point.svg') !important;
+}
+
+
+}
+
+.work h2
+{
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family:"Gotham Rounded", sans-serif;
+}
+
+.title
+{
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.1em;
+  line-height: 1.1em;
+  font-family:"Gotham Rounded", sans-serif;
+}
+
+.description
+{
+  color: #ffffff;
+  font-weight: 200;
+  width: 350px;
+  line-height: 1.6em;
+}
+
+.formSahur input
+{
+  width: 320px;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  padding-left: 1rem;
+  height: 44px;
+  margin-bottom: 1.3em;
+}
+
+@media screen and (max-width: 39.9375em) 
+{
+
+.term
+{
+  background: #fff;
+  color: #00264A;
+  padding: 50px 30px;
+  font-family:"Gotham Rounded", sans-serif;
+}
+
+.term h2
+{
+  font-size: 25px;
+  font-weight: 500;
+  font-family:"Gotham Rounded", sans-serif;
+}
+.termaSyarat
+{
+  margin-top: 2em;
+  font-weight: 300;
+  font-size: 16px;
+  font-family:"Gotham Rounded", sans-serif;
+  margin-bottom: 0px;
+  padding-left: 1em;
+}
+
+.termaSyarat p 
+{
+  padding-left: 1em;
+}
+
+.termaSyarat {
+    list-style-image: url('/assets/point.svg') !important;
+}
+
+
+.cara, .cara2
+{
+  color: #ffffff;
+  text-align: center;
+}
+
+.cara img
+{
+  width: 100px;
+  margin-bottom: 1em;
+}
+
+.cara2 img
+{
+  width: 100px;
+  margin-bottom: 1em;
+}
+
+.cara p 
+{
+  font-size: 16px;
+  margin-top: 1em;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.cara2 p 
+{
+  font-size: 16px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+
+ .formSahur input
+{
+  width: 210px;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  padding-left: 1rem;
+  margin-right: 0 !important;
+  height: 44px;
+}
+
+.btn-sahur
+{
+  border-radius: 50px;
+  width: 210px !important;
+  height: auto !important;
+  background-color: #82BACE;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 600;
+  padding-right: 5px;
+  padding-left: 5px !important;
+  font-size: 12px;
+}
+
+.title
+{
+  margin-bottom: 0.3em;
+}
+
+.description
+{
+  color: #ffffff;
+  font-weight: 200;
+  width: auto !important;
+  line-height: 1.6em;
+  margin-bottom: 3em;
+}
+}
+
+.columns-1
+{
+  padding-right: 0rem;
+  float: left;
+  padding-left: 0.625rem; 
+}
+.columns-2
+{
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 39.9375em) 
+{
+  .columns-1
+{
+  padding-right: 0.625rem;
+  float: left;
+  padding-left: 0.625rem; 
+}
+.columns-2
+{
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.background
+{/*
+  position: absolute;
+  margin: auto;
+  top: 20em !important;
+  margin-left: 2em !important;
+  width: 20em !important;
+  z-index: -999;*/
+  display: none;
+}
+}
+
+.background
+{
+  position: absolute;
+  margin: auto;
+  top: -4em;
+  width: 70em;
+  margin-left: 4em;
+  z-index: -999;
+}

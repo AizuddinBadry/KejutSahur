@@ -143,6 +143,7 @@ DEPENDENCIES
   phony_rails
   rails
   sass-rails
+  sprockets-rails
   sqlite3
   turbolinks
   twilio-ruby

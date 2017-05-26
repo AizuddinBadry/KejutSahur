@@ -18,7 +18,7 @@ class TwilioController < ApplicationController
   def call
   @@twilio_sid = 'ACe9f7c8e82c2bb9b2d946d9714651f3d3'
   @@twilio_token = '1f52df9d6e239fc7fc0562fa238eec08'
-  @@twilio_number = '+14806463928'
+  @@twilio_number = '+60162991318'
   @@api_host = 'https://bafe-sahur.herokuapp.com'
 
     contact = Contact.new
@@ -28,9 +28,8 @@ class TwilioController < ApplicationController
       @call = @client.calls.create(
         :from => @@twilio_number,
         :to => contact.user_phone,
-        :url => "http://demo.twilio.com/welcome/voice" # Fetch instructions from this URL when the call connects
+        :url => "http://twimlets.com/holdmusic?Message=Selamat%20Bersahur%20BAFE%20" # Fetch instructions from this URL when the call connects
       )
-
       # Let's respond to the ajax call with some positive reinforcement
       @msg = { :message => 'Phone call incoming!', :status => 'ok' }
   end
