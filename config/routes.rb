@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'twilio#index'
 
-  post 'call' => 'twilio#call'
-  post 'connect/:sales_number' => 'twilio#connect'
+  post '/call' => 'twilio#call'
+  post '/connect/:sales_number' => 'twilio#connect'
 
 end
