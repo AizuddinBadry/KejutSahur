@@ -22,7 +22,7 @@ $(function() {
         }).done(function(data) {
             alert(data.message);
         }).fail(function() {
-            alert('There was a problem calling you - please try again later.');
+            alert('Trial accounts may only make calls to verified numbers.');
         }).always(function() {
             $submit.removeAttr('disabled');
         });
