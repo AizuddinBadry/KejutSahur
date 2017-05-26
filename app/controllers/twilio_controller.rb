@@ -22,7 +22,6 @@ class TwilioController < ApplicationController
   def call
     contact = Contact.new
     contact.user_phone  = params[:userPhone]
-    contact.sales_phone = params[:salesPhone]
 
     # Validate contact
     if contact.valid?
