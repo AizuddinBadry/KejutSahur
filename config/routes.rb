@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  root 'customers#index'
 
-  root 'twilio#index'
+  get '/customerlist' => 'customers#customerphone'
 
   post '/call' => 'twilio#call'
   post '/connect/:sales_number' => 'twilio#connect'
   post '/voice' => 'twilio#voice'
+  post '/store' => 'customers#store'
 
 end

@@ -50,13 +50,12 @@ class TwilioController < ApplicationController
 
   def voice
     response = Twilio::TwiML::Response.new do |r|
-      r.Say "Yay! You're on Rails!", voice: "alice"
-      r.Sms "Well done building your first Twilio on Rails 5 app!"
+      r.Say "Terima kasih kerana menghubungi Bafe!", voice: "alice"
+      r.Sms "Terima kasih kerana menghubungi Bafe!"
       r.Play "http://linode.rabasa.com/cantina.mp3"
     end
     render :xml => response.to_xml
   end
-
 
   # Authenticate that all requests to our public-facing TwiML pages are
   # coming from Twilio. Adapted from the example at
