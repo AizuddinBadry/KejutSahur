@@ -28,7 +28,7 @@ class TwilioController < ApplicationController
       @call = @client.calls.create(
         :from => @@twilio_number,
         :to => contact.user_phone,
-        :url => "http://twimlets.com/holdmusic?Message=Selamat%20Bersahur%20BAFE%20" # Fetch instructions from this URL when the call connects
+        :url => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical&Message=Selamat%20Bersahur%20BAFE%20" # Fetch instructions from this URL when the call connects
       )
       # Let's respond to the ajax call with some positive reinforcement
       @msg = { :message => 'Phone call incoming!', :status => 'ok' }
