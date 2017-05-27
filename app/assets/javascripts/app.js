@@ -4,11 +4,7 @@ $(function() {
 //testingg
 
 //testingg
-//testingg
-//testingg
-//testingg
-//testingg
-//testingg
+
 
     $.ajax({
             url:'/customerlist',
