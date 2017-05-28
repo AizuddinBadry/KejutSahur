@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'customers#index'
+  root 'twilio#index'
 
   get '/customerlist' => 'customers#customerphone'
 
