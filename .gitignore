@@ -15,5 +15,5 @@
 /log/*.log
 /tmp
 .DS_Store
-
+app.json
 .env

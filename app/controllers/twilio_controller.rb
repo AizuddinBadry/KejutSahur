@@ -19,7 +19,7 @@ class TwilioController < ApplicationController
   @@twilio_sid = 'ACe9f7c8e82c2bb9b2d946d9714651f3d3'
   @@twilio_token = '1f52df9d6e239fc7fc0562fa238eec08'
   @@twilio_number = '+60162991318'
-  @@api_host = 'https://bafe-sahur.herokuapp.com'
+  @@api_host = 'https://www.kejutsahur.com'
 
     contact = Contact.new
     contact.user_phone  = params[:userPhone]
@@ -28,7 +28,7 @@ class TwilioController < ApplicationController
       @call = @client.calls.create(
         :from => @@twilio_number,
         :to => contact.user_phone,
-        :url => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical&Message=Selamat%20Bersahur%20BAFE%20" # Fetch instructions from this URL when the call connects
+        :url => "#{@@api_host}/lagu" # Fetch instructions from this URL when the call connects
       )
       # Let's respond to the ajax call with some positive reinforcement
       @msg = { :message => 'Phone call incoming!', :status => 'ok' }
@@ -48,11 +48,9 @@ class TwilioController < ApplicationController
     render text: response.text
   end
 
-  def voice
+  def lagu
     response = Twilio::TwiML::Response.new do |r|
-      r.Say "Terima kasih kerana menghubungi Bafe!", voice: "alice"
-      r.Sms "Terima kasih kerana menghubungi Bafe!"
-      r.Play "http://linode.rabasa.com/cantina.mp3"
+      r.Play "http://twilight3g.com/mp3-ringtones/tone/2015/xmas/raya1_YtkpbVP6.mp3"
     end
     render :xml => response.to_xml
   end

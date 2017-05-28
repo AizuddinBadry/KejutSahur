@@ -18,6 +18,7 @@ gem 'phony_rails'
 # Twilio REST API.
 gem 'twilio-ruby'
 
+gem 'httparty'
 
 group :development, :test do
 

@@ -8,7 +8,7 @@ $(function() {
             for(var i=0;i<data.length;i++) {
             queueIDs.push(+data[i]['phone']);
           };
-            console.log(queueIDs);
+            console.log(data);
         });
 
     $('#userPhone, #salesPhone').intlTelInput({

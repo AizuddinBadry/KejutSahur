@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   post '/connect/:sales_number' => 'twilio#connect'
   post '/voice' => 'twilio#voice'
   post '/store' => 'customers#store'
+  post '/lagu' => 'twilio#lagu'
 
 end
