@@ -19,7 +19,7 @@ class TwilioController < ApplicationController
   @@twilio_sid = 'ACe9f7c8e82c2bb9b2d946d9714651f3d3'
   @@twilio_token = '1f52df9d6e239fc7fc0562fa238eec08'
   @@twilio_number = '+60162991318'
-  @@api_host = 'https://www.kejutsahur.com'
+  @@api_host = 'https://bafe-sahur.herokuapp.com'
 
     contact = Contact.new
     contact.user_phone  = params[:userPhone]
