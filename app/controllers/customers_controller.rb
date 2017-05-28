@@ -14,7 +14,7 @@ class CustomersController < ApplicationController
 	end
 
 	def customerphone
-		@customer = Customer.select(:phone)
+		@customer = Customer.all
 		render json: @customer
 	end
 
