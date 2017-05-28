@@ -28,6 +28,7 @@ class TwilioController < ApplicationController
       @call = @client.calls.create(
         :from => @@twilio_number,
         :to => contact.user_phone,
+        :timeout => 5,
         :url => "#{@@api_host}/lagu" # Fetch instructions from this URL when the call connects
       )
       # Let's respond to the ajax call with some positive reinforcement
