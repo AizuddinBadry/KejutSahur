@@ -18,11 +18,9 @@ gem 'phony_rails'
 # Twilio REST API.
 gem 'twilio-ruby'
 
-gem 'sprockets-rails'
-
 
 group :development, :test do
-  gem 'pg'
+
 end
 
 group :production do

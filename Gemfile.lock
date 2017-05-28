@@ -142,7 +142,6 @@ DEPENDENCIES
   phony_rails
   rails
   sass-rails
-  sprockets-rails
   turbolinks
   twilio-ruby
   uglifier
