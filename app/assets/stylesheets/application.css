@@ -424,3 +424,8 @@ body
   margin-left: 4em;
   z-index: -999;
 }
+
+.hidden
+{
+  display:none;
+}
