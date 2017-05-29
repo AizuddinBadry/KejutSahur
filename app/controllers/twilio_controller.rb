@@ -1,14 +1,10 @@
 require 'twilio-ruby'
 
 class TwilioController < ApplicationController
-  # Before we allow the incoming request to connect, verify
-  # that it is a Twilio request
+
   before_action :authenticate_twilio_request, :only => [
     :connect
   ]
-
-  # Define our Twilio credentials as instance variables for later use
- 
   # Render home page
   def index
     render 'index'
@@ -16,10 +12,10 @@ class TwilioController < ApplicationController
 
   # Handle a POST from our web form and connect a call via REST API
   def call
-  @@twilio_sid = 'ACe9f7c8e82c2bb9b2d946d9714651f3d3'
-  @@twilio_token = '1f52df9d6e239fc7fc0562fa238eec08'
-  @@twilio_number = '+60162991318'
-  @@api_host = 'https://bafe-sahur.herokuapp.com'
+  @@twilio_sid = '#'
+  @@twilio_token = '#'
+  @@twilio_number = '#'
+  @@api_host = '#'
 
     contact = Contact.new
     contact.user_phone  = params[:userPhone]
@@ -33,20 +29,6 @@ class TwilioController < ApplicationController
       )
       # Let's respond to the ajax call with some positive reinforcement
       @msg = { :message => 'Phone call incoming!', :status => 'ok' }
-  end
-
-  # This URL contains instructions for the call that is connected with a lead
-  # that is using the web form.
-  def connect
-    # Our response to this request will be an XML document in the "TwiML"
-    # format. Our Ruby library provides a helper for generating one
-    # of these documents
-    response = Twilio::TwiML::Response.new do |r|
-      r.Say 'Thanks for contacting our sales department. Our ' +
-        'next available representative will take your call.', :voice => 'alice'
-      r.Dial params[:sales_number]
-    end
-    render text: response.text
   end
 
   def lagu

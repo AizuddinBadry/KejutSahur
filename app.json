@@ -13,22 +13,22 @@
     "REST API",
     "Demo"
   ],
-  "website": "https://twilio.com/docs/howto/click-to-call-walkthrough",
-  "repository": "https://github.com/TwilioDevEd/clicktocall-rails",
-  "logo": "https://s3-us-west-2.amazonaws.com/deved/twilio-logo.png",
-  "success_url": "/landing.html",
+  "website": "http://kejutsahur.com/",
+  "repository": "https://github.com/aizuddinbadry/kejutsahur",
+  "logo": "#",
+  "success_url": "#",
   "env": {
     "TWILIO_ACCOUNT_SID": {
       "description": "Your Twilio account secret ID, you can find at: https://www.twilio.com/user/account",
-      "value": "ACe9f7c8e82c2bb9b2d946d9714651f3d3"
+      "value": "YOUR_SID"
     },
     "TWILIO_AUTH_TOKEN": {
       "description": "Your secret Twilio Auth token, you can find at: https://www.twilio.com/user/account",
-      "value": "1f52df9d6e239fc7fc0562fa238eec08"
+      "value": "YOUR_TOKEN"
     },
     "TWILIO_NUMBER": {
       "description": "The Twilio phone number you are using for this app. You can get one here: https://www.twilio.com/user/account/phone-numbers/incoming",
-      "value": "+14806463928"
+      "value": "YOUR_NUMBER"
     }
   }
 }
