@@ -15,7 +15,9 @@ class CustomersController < ApplicationController
 
 	def customerphone
 		@customer = Customer.all
-		render json: @customer
+		 respond_to do |format|
+    		format.html { render :text => @customer }
+ 		 end
 	end
 
 	private
